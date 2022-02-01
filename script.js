@@ -22,6 +22,7 @@ function validar(msj){
   let validacion = true;
   for(i=0; i<msj.length; i++){
     let letra = letras.indexOf(msj[i])
+    console.log(letras.indexOf(msj[i]))
     if (letra == (-1)) {
       validacion = false
     }
@@ -60,11 +61,9 @@ function desencriptarMjs(){
   } else {
     alert("Caracteres invalidos")
   }
-  
 }
 //Funcion copiar texto
 function copiarTxt(){
   navigator.clipboard.writeText(mensaje.value);
-  
 }
 
